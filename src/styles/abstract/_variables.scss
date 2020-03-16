@@ -1,0 +1,30 @@
+//.. цвет
+$white: #fff;
+$color__black_main: #1A212F; // основной черный
+$color__black_second: #141312; // вторичный черный
+$color__border_main: #E1E1E1; // бордюр поля фильтра и карточки товара
+$color__filter_button: #FAC663; // кнопка фильтра
+$color__product_icon-list: #777777; // иконки оснащения
+$color__product_button: #FF7236; // кнопка бронирования
+$color__product_icon: #FFFEFD; // фон иконки в кнопке бронирования
+
+//.. шрифт
+$f-size__main: 14; // освной
+$f-size__nav: 16; // навигация меню и заголовки фильтра
+$f-size__price: 18; // цена
+$f-size__h1: 36; // 
+$f-size__h2: 20; //
+
+$l-height__small: 17; // line-height параграфов и кнопок
+$l-height__nav: 19; // line-height навигации меню и заголовков фильтра
+
+//.. размер
+$width__content: 1366; // ширина основных контейнеров
+
+//.. время
+$time: .25s; // наведение
+
+//.. z-index
+$z-index-first: 100; // основа 
+$z-index-second: 10; // вложенное 
+$z-index-third: 20; // основное вложенное 

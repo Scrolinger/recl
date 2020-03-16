@@ -1,0 +1,179 @@
+main.main.js-main
+  article.main__body
+    h1 Наши номера
+
+    .control
+      button.control__filter.js-control-filter(type='button') Фильтр
+      form(action="#" method='post').control__sorting.js-control__sorting
+        ul.sorting.js-sorting
+          li.sorting__square-up
+            i.icon.icon-arrow-up
+            | По площади
+          li.sorting__square-down
+            i.icon.icon-arrow-down
+            | По площади
+          li.sorting__price-up
+            i.icon.icon-arrow-up
+            | По цене
+          li.sorting__price-down
+            i.icon.icon-arrow-down
+            | По цене
+
+    aside.filter.js-filter
+      .filter__blockout.js-filter__blockout
+      form(action="#" method='post').filter__body.js-filter__body
+        .filter__item Цена за сутки, P
+          .filter__inputs.filter__inputs_price
+            label.filter__label-price
+              input.filter__input-price(type="number" name='price-min' placeholder='от 100' min='100' max='600')
+            label.filter__label-price
+              input.filter__input-price(type="number" name='price-max' placeholder='до 600' min='100' max='600')
+              
+        .filter__item Площадь
+          .filter__inputs
+            label.filter__label
+              input.filter__checkbox.js-filter__checkbox(name='square-1', type='checkbox')
+              | 0,63 м2 
+              span.filter__check
+            label.filter__label
+              input.filter__checkbox.js-filter__checkbox(name='square-2', type='checkbox')
+              | 0,90 м2 
+              span.filter__check
+            label.filter__label
+              input.filter__checkbox.js-filter__checkbox(name='square-3', type='checkbox')
+              | 1,13 м2
+              span.filter__check
+            label.filter__label
+              input.filter__checkbox.js-filter__checkbox(name='square-4', type='checkbox')
+              | 1,56 м2
+              span.filter__check
+            label.filter__label
+              input.filter__checkbox.js-filter__checkbox(name='square-5', type='checkbox')
+              | 2,56 м2
+              span.filter__check
+            label.filter__label
+              input.filter__checkbox.js-filter__checkbox(name='square-6', type='checkbox')
+              | 2,88 м2 
+              span.filter__check
+            
+        .filter__item Оснащение номера
+          .filter__inputs
+            label.filter__label
+              input.filter__checkbox.js-filter__checkbox(name='equipment-1', type='checkbox')
+              | Пустой номер
+              span.filter__check
+            label.filter__label
+              input.filter__checkbox.js-filter__checkbox(name='equipment-2', type='checkbox')
+              | Лежак
+              span.filter__check
+            label.filter__label
+              input.filter__checkbox.js-filter__checkbox(name='equipment-3', type='checkbox')
+              | Когтеточка
+              span.filter__check
+            label.filter__label
+              input.filter__checkbox.js-filter__checkbox(name='equipment-4', type='checkbox')
+              | Игровой-комплекс
+              span.filter__check
+            label.filter__label
+              input.filter__checkbox.js-filter__checkbox(name='equipment-5', type='checkbox')
+              | Домик
+              span.filter__check
+        button.btn.success(type='submit') Применить
+        button.btn.reset.js-reset(type='reset') Сбросить фильтр
+    
+    .catalog
+      .catalog__body
+        section.product
+          header
+            img(src="img/cat1.jpg", alt="text")
+          .product__body
+            h2 Эконом
+            p Размеры (ШхГхВ) - 90х70х180 см
+            p Площадь - 0,63 м2
+            p Оснащение номера 
+              i.icon.icon-lock
+            p Цена за сутки:
+              span.price 100P
+            a.btn(href="#") Забронировать
+              i.icon.icon-paw2
+
+        section.product
+          header
+            img(src="img/cat2.jpg", alt="text")
+          .product__body
+            h2 Эконом плюс
+            p Размеры (ШхГхВ) - 90х100х180 см
+            p Площадь - 0,90 м2
+            p Оснащение номера
+              i.icon.icon-tray
+              i.icon.icon-sharpener
+            p Цена за сутки:
+              span.price 200P
+            a.btn(href="#") Забронировать
+              i.icon.icon-paw2
+
+        section.product
+          header
+            img(src="img/cat3.jpg", alt="text")
+          .product__body
+            h2 Комфорт
+            p Размеры (ШхГхВ) - 100х125х180 см
+            p Площадь - 1,13 м2
+            p Оснащение номера 
+              i.icon.icon-tray
+              i.icon.icon-sharpener
+              i.icon.icon-skein
+            p Цена за сутки:
+              span.price 250P
+            a.btn(href="#") Забронировать
+              i.icon.icon-paw2
+
+        section.product
+          header
+            img(src="img/cat4.jpg", alt="text")
+          .product__body
+            h2 Сьют
+            p Размеры (ШхГхВ) - 125х125х180 см
+            p Площадь - 1,56 м2
+            p Оснащение номера 
+              i.icon.icon-tray
+              i.icon.icon-sharpener
+              i.icon.icon-skein
+            p Цена за сутки:
+              span.price 350P
+            a.btn(href="#") Забронировать
+              i.icon.icon-paw2
+
+        section.product
+          header
+            img(src="img/cat5.jpg", alt="text")
+          .product__body
+            h2 Люкс
+            p Размеры (ШхГхВ) - 160х160х180 см
+            p Площадь - 2,56 м2
+            p Оснащение номера 
+              i.icon.icon-tray
+              i.icon.icon-sharpener
+              i.icon.icon-skein
+              i.icon.icon-hut
+            p Цена за сутки:
+              span.price 500P
+            a.btn(href="#") Забронировать
+              i.icon.icon-paw2
+
+        section.product
+          header
+            img(src="img/cat6.jpg", alt="text")
+          .product__body
+            h2 Супер-Люкс
+            p Размеры (ШхГхВ) - 180х160х180 см
+            p Площадь - 2,88 м2
+            p Оснащение номера 
+              i.icon.icon-tray
+              i.icon.icon-sharpener
+              i.icon.icon-skein
+              i.icon.icon-hut
+            p Цена за сутки:
+              span.price 600P
+            a.btn(href="#") Забронировать
+              i.icon.icon-paw2

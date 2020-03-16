@@ -1,0 +1,110 @@
+.icon {
+    font-size: 10px;
+}
+
+.icon:before {
+    content:' ';
+    vertical-align:middle;
+    display: inline-block;
+    background-image: url("../../../../dest/img/sprites/sprite.svg");
+    background-repeat: no-repeat;
+    background-size: 2.3em 15.4em;
+}
+
+.no-svg .icon:before {
+    background-image: url("../../../../dest/img/sprites/sprite.png");
+}
+
+
+
+  .icon.arrow-down:before {
+      background-position: -0.1em -0.1em;
+      width: 0.7em;
+      height: 1.2em;
+  }
+
+
+
+
+  .icon.arrow-up:before {
+      background-position: -0.1em -1.5em;
+      width: 0.7em;
+      height: 1.2em;
+  }
+
+
+
+
+  .icon.arrowhead-up:before {
+      background-position: -0.1em -2.9em;
+      width: 1.4em;
+      height: 0.8em;
+  }
+
+
+
+
+  .icon.hut:before {
+      background-position: -0.1em -3.9em;
+      width: 1.6em;
+      height: 1.6em;
+  }
+
+
+
+
+  .icon.lock:before {
+      background-position: -0.1em -5.699999999999999em;
+      width: 1.6em;
+      height: 1.6em;
+  }
+
+
+
+
+  .icon.mark:before {
+      background-position: -0.1em -7.5em;
+      width: 1.1em;
+      height: 0.8em;
+  }
+
+
+
+
+  .icon.paw2:before {
+      background-position: -0.1em -8.5em;
+      width: 2.1em;
+      height: 1.8em;
+  }
+
+
+
+
+  .icon.sharpener:before {
+      background-position: -0.1em -10.5em;
+      width: 1.4em;
+      height: 1.6em;
+  }
+
+
+
+
+  .icon.skein:before {
+      background-position: -0.1em -12.299999999999999em;
+      width: 1.6em;
+      height: 1.6em;
+  }
+
+
+
+
+  .icon.tray:before {
+      background-position: -0.1em -14.1em;
+      width: 1.6em;
+      height: 1.2em;
+  }
+
+
+
+
+

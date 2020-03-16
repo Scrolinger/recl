@@ -1,0 +1,68 @@
+body {
+  font-family: Lato, Arial, sans-serif;
+  color: $color__black_main;
+  font-size: $f-size__main * 1px;
+}
+h1 {
+  font-family: Rubik, Arial, sans-serif;
+  font-weight: bold;
+  font-size: $f-size__h1 * 1px;
+  line-height: 43px;
+}
+h2 {
+  font-family: Rubik, Arial, sans-serif;
+  font-weight: 500;
+  font-size: $f-size__h2 * 1px;
+  line-height: 24px;
+}
+.btn {
+  font-size: $f-size__main * 1px;
+  font-weight: 600;
+  line-height: $l-height__small * 1px;
+}
+.header {
+  li {
+    a {
+      color: $color__black_main;
+      font-size: $f-size__nav * 1px;
+      font-weight: 600;
+      line-height: $l-height__nav * 1px;
+    }
+  }
+}
+.control {
+  font-size: $f-size__main * 1px;
+  line-height: $l-height__small * 1px;
+  color: $color__black_second;
+}
+.filter {
+  &__item {
+    font-size: $f-size__nav * 1px;
+    line-height: $l-height__nav * 1px;
+    font-weight: 500;
+    label {
+      font-size: $f-size__main * 1px;
+      font-weight: normal;
+      line-height: $l-height__small * 1px;
+    }
+  }
+  &__input-price {
+    &::placeholder {
+      color: $color__black_main;
+    }
+  }
+}
+.product {
+  p {
+    font-size: $f-size__main * 1px;
+    line-height: $l-height__small * 1px;
+  }
+  .price {
+    font-weight: 500;
+    font-size: $f-size__price * 1px;
+    line-height: 22px;
+  }
+  .btn {
+    color: $white;
+  }
+}

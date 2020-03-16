@@ -1,0 +1,25 @@
+doctype html
+html(lang="ru")
+  head
+    meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
+    meta(http-equiv='X-UA-Compatible', content='ie=edge')
+    title Котейка
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    meta(name='description', content='Описание')
+    meta(name='keywords', content='Ключевые слова')
+    meta(name='robots', content='index,follow')
+    meta(name='author', content='M. Otkin')
+    // styles - - - - - - - 
+    link(href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet")
+    link(href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet")
+    link(href='styles/main.min.css' rel="stylesheet")
+  body
+    // header - - - - - - - 
+    include ../layout/header.pug
+    // main - - - - - - - 
+    include ../layout/main.pug
+    // footer - - - - - - - 
+    include ../layout/footer.pug
+    // scripts - - - - - - - 
+    script(src='libs/jquery/dist/jquery.min.js')
+    script(src='js/main.min.js')

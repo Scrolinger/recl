@@ -1,0 +1,29 @@
+@charset 'UTF-8';
+
+// sass-lint:disable indentation
+@import
+  './abstract/variables',
+  './abstract/functions',
+  './abstract/mixins';
+
+@import
+  './themes/default';
+
+@import
+  './base/normilize',
+  './base/base',
+  './base/helpers',
+  // './base/sprite',
+  './base/iconfont',
+  './base/typography';
+
+@import
+  './layout/header',
+  './layout/main',
+  './layout/footer';
+
+@import
+  './components/buttons';
+
+@import
+  './pages/home';
