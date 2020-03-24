@@ -1,10 +1,10 @@
 main.main.js-main
   article.main__body
     h1 Наши номера
-
+    //- Кнопки сортировки и фильтра
     .control
       button.control__filter.js-control-filter(type='button') Фильтр
-      form(action="#" method='post').control__sorting.js-control__sorting
+      .control__sorting.js-control__sorting
         ul.sorting.js-sorting
           li.sorting__square-up
             i.icon.icon-arrow-up
@@ -18,7 +18,7 @@ main.main.js-main
           li.sorting__price-down
             i.icon.icon-arrow-down
             | По цене
-
+    //- Фильтр
     aside.filter.js-filter
       .filter__blockout.js-filter__blockout
       form(action="#" method='post').filter__body.js-filter__body
@@ -80,7 +80,7 @@ main.main.js-main
               span.filter__check
         button.btn.success(type='submit') Применить
         button.btn.reset.js-reset(type='reset') Сбросить фильтр
-    
+    //- Каталог 
     .catalog
       .catalog__body
         section.product

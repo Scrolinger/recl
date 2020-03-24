@@ -1,10 +1,6 @@
 .main {
   @extend %width-center;
   padding: 0 65px 0 98px;
-  &:before {
-    content: '';
-    height: 76px;
-  }
   &__body {
     display: flex;
     flex-wrap: wrap;
@@ -15,6 +11,7 @@
     margin: 75px 0;
   }
 }
+// Кнопки сортировки
 .control {
   position: relative;
   width: 100%;
@@ -54,6 +51,9 @@
         color: $white;
         cursor: pointer;
       }
+      ~ li {
+        display: none;
+      }
     }
     .icon {
       margin-right: 5px;
@@ -62,6 +62,7 @@
     }
   }
 }
+// Фильтр
 .filter {
   width: 210px;
   &__blockout {
@@ -172,7 +173,7 @@
     }
   }
 }
-
+// Каталог
 .catalog {
   max-width: 870px;
   margin-left: 30px;

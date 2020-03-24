@@ -1,8 +1,5 @@
 $(document).ready(function(){
 
-// сворачивание сортировки  
-  $('.js-sorting li:not(:first)').slideToggle(0);
-
 // фиксация шапки
   $(window).scroll(function(){
     if($(this).scrollTop()!=0){
@@ -44,7 +41,7 @@ $(document).ready(function(){
 
 // показ кнопки сброса фильтра при выборе чекбокса
   $('.js-filter__checkbox').click(function() {
-    if ($(this).is(':checked')){
+    if ($('.js-filter__checkbox').is(':checked')){
       $(".js-reset").fadeIn(250);
     } else {
       $(".js-reset").fadeOut(250);
@@ -56,7 +53,7 @@ $(document).ready(function(){
 
 // сортировка
   $('.js-control__sorting').click(function() {
-    $('.js-sorting li:not(:first)').slideToggle(250);
+    $('.js-sorting li:not(:first)').fadeToggle(250);
   });
 
 });
